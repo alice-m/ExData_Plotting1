@@ -14,6 +14,6 @@ cols = c(3,4,5,6,7,8)
 hh.subset[,cols] = apply(hh.subset[,cols], 2, function(x) as.numeric(x))
 
 #plot
-png(file="plot1.png", width=480, height=480)
+png(file="plot1.png", width=480, height=480,bg = "transparent")
 with(hh.subset, hist(Global_active_power,col="red", xlab="Global Active Power (kilowatts)", main= "Global Active Power"))
 dev.off()

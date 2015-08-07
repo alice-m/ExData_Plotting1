@@ -17,6 +17,6 @@ hh.subset[,cols] = apply(hh.subset[,cols], 2, function(x) as.numeric(x))
 
 
 #plot
-png(file="plot2.png", width=480, height=480)
+png(file="plot2.png", width=480, height=480,bg = "transparent")
 with(hh.subset, plot(Time, Global_active_power, ylab="Global Active Power (kilowatts)", xlab="", type= "l"))
 dev.off()

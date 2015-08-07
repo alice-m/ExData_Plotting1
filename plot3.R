@@ -14,7 +14,7 @@ hh.subset[,cols] = apply(hh.subset[,cols], 2, function(x) as.numeric(x))
 
 
 #plot
-png(file="plot3.png", width=480, height=480)
+png(file="plot3.png", width=480, height=480,bg = "transparent")
 with(hh.subset, 
      plot(Time, Sub_metering_1, ylab="Energy sub metering", xlab="", type= "l")
 )
